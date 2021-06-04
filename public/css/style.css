@@ -119,13 +119,15 @@ header {
 
 .telegram-button,
 .telegram-button:hover,
-.telegram-button:active {
+.telegram-button:active,
+.telegram-button:focus {
   margin: 10px;
   padding: 6px 20px;
   border-radius: 10px;
   background-color: #3dc6c1;
   border-color: #3dc6c1;
   color: #fff !important;
+  transition: none !important;
 }
 
 .telegram-logo {
