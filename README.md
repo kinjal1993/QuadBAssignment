@@ -1,31 +1,27 @@
-# QuadBAssignment
+# Website Documentation using VuePress
 
-https://api.wazirx.com/api/v2/tickers
-keys to be used
-"name" - DataTypes.STRING
-"last" - decimal
-"buy" - decimal
-"sell" - decimal
-"volume" - decimal
-"base_unit" - DataTypes.STRING
+# About the project
 
+Fetches top 10 results from api(https://api.wazirx.com/api/v2/tickers), stores them in local database and displys the data in the front end.
 
-{
-"base_unit":"btc",
-"last":"2977301.0",
-"volume":"420.27301",
-"sell":"2977301.0",
-"buy":"2972908.0",
-"name":"BTC/INR"
-},
+## Github link for the project
+https://github.com/kinjal1993/QuadBAssignment
 
-express
-sequelize
-sqllite3
-webpack
-ejs
+# Quick Start
 
-var compression = require('compression')
-var express = require('express')
-var app = express()
-app.use(compression())
+## 1. Clone the git project
+``` bash
+git clone https://github.com/kinjal1993/QuadBAssignment.git
+``` 
+## 2. Navigate to the folder
+``` bash
+cd <folder-name>
+``` 
+## 3. Install dependencies
+``` bash
+npm install
+```
+## 4. Run the project
+``` bash
+npm start
+`
