@@ -1,5 +1,3 @@
-# Website Documentation using VuePress
-
 # About the project
 
 Fetches top 10 results from api(https://api.wazirx.com/api/v2/tickers), stores them in local database and displays data on a webpage.
