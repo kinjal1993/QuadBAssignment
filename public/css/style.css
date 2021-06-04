@@ -1,0 +1,350 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  height: 100vh;
+  place-items: center;
+  font-weight: 400;
+  margin: 0;
+}
+
+#main {
+  width: 100%;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f0f0f0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #3dc6c1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #3dc6c1;
+}
+
+input:focus + .slider {
+  background-color: #3dc6c1;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+header {
+  padding: 20px 30px 0px;
+  width: 100%;
+}
+
+.padding-none {
+  padding: 0;
+}
+
+.margin-10 {
+  margin: 10px;
+}
+
+.heading {
+  padding: 10px;
+  font-size: 40px;
+  color: #3dc6c1;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.heading span {
+  color: white;
+  font-size: 20px;
+}
+@media screen and (max-width: 960px) {
+  .logo {
+    width: 100%;
+  }
+}
+
+.sub-heading {
+  color: gray;
+  font-size: 18px;
+  margin-top: -18px;
+  opacity: 0.8;
+}
+.sub-heading-link {
+  color: #3dc6c1;
+}
+
+#countdown {
+  margin: 10px;
+}
+
+.telegram-button,
+.telegram-button:hover,
+.telegram-button:active {
+  margin: 10px;
+  padding: 6px 20px;
+  border-radius: 10px;
+  background-color: #3dc6c1;
+  border-color: #3dc6c1;
+  color: #fff !important;
+}
+
+.telegram-logo {
+  height: 15px;
+  margin-right: 10px;
+}
+
+.crypto-table-outer {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 30px auto;
+  
+}
+
+.crypto-table-outer table {
+  border-collapse: separate;
+  border-spacing: 0 1em;
+}
+.crypto-table-outer table tbody td:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+.crypto-table-outer table tbody td:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.crypto-table-outer table {
+  padding: 0 15px;
+}
+
+.crypto-table-outer td {
+  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  opacity: 1;
+}
+
+.crypto-table-outer th {
+  padding: 0 12px;
+  font-size: 18px;
+  opacity: 0.45;
+  letter-spacing: 1px;
+  margin: 0 0 -5px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 415px) {
+  .crypto-table-outer td,
+  .crypto-table-outer th {
+    font-size: 14px;
+    margin: 0;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .crypto-table-outer {
+    padding: 0 10px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .center-header {
+    text-align: center !important;
+  }
+  header {
+    padding: 20px 0px 0px;
+  }
+  .crypto-table-outer td {
+    padding: 6px !important;
+    white-space: nowrap;
+  }
+}
+
+.header-button {
+  margin: 10px;
+  padding: 6px 20px;
+  border-radius: 10px;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #545b62;
+  border-color: #4e555b;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgb(130 138 145 / 50%);
+}
+
+.dropdown-menu {
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+
+.footer-text,
+.footer-text-link {
+  color: #888686;
+}
+
+.footer-text-link:hover {
+  color: #888686;
+  text-decoration: none;
+}
+.footer-text {
+  white-space: nowrap;
+  padding-right: 12px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.footer {
+  bottom: 0;
+  padding: 13px;
+  width: 100%;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3dc6c1;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* dark theme */
+.theme-dark {
+  position: relative;
+  background: #191d28;
+  color: #fff;
+}
+.theme-dark .crypto-table-outer tbody tr {
+  background-color: #2e3241;
+}
+.theme-dark .crypto-table-outer thead th {
+  color: #fff;
+}
+.theme-dark .header-button {
+  background-color: #2e3241;
+  color: #fff;
+  border: 0;
+}
+
+.theme-dark input:checked + .slider {
+  background-color: #2e3241;
+}
+
+.theme-dark .footer {
+  border-top: 2px solid #2e3241;
+}
+
+/* theme light */
+.theme-light .slider.round {
+  box-shadow: 0 0 2px #ddd;
+}
+.theme-light .crypto-table-outer tbody tr {
+  background-color: #f8f9fa;
+}
+.theme-light .crypto-table-outer td {
+  color: #0c0f48;
+}
+.theme-light .header-button {
+  color: #0c0f48;
+  background-color: #f8f9fa;
+  border: 0;
+  box-shadow: 0 0 2px #ddd;
+}
+.theme-light input:checked + .slider,
+.theme-light input:focus + .slider {
+  background-color: #f8f9fa;
+}

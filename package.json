@@ -1,0 +1,33 @@
+{
+  "name": "quadbassignment",
+  "version": "1.0.0",
+  "description": "replicating https://hodlinfo.com/ front page using wazirx api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kinjal1993/QuadBAssignment.git"
+  },
+  "author": "Kinjal Pathak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kinjal1993/QuadBAssignment/issues"
+  },
+  "homepage": "https://github.com/kinjal1993/QuadBAssignment#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "node-fetch": "^2.6.1",
+    "node-schedule": "^2.0.0",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
