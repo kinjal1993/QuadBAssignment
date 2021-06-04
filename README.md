@@ -4,9 +4,6 @@
 
 Fetches top 10 results from api(https://api.wazirx.com/api/v2/tickers), stores them in local database and displys the data in the front end.
 
-## Github link for the project
-https://github.com/kinjal1993/QuadBAssignment
-
 # Quick Start
 
 ## 1. Clone the git project
