@@ -45,7 +45,18 @@ cd <folder-name>
 ``` bash
 npm install
 ```
-## 4. Run the project
+## 4. Environment Variables
+create `.env` file at the root directory and set following parameters
+APP_PORT = 3000
+HOST = localhost
+DATABASE = <db-name>
+DBPORT = 3306
+DBUSER = <username>
+DBPASSWORD = <password>
+
+> this app uses mysql as database engine. so mysql server should exist in the system.
+
+## 5. Run the project
 ``` bash
 npm start
 `
